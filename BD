@@ -1,0 +1,15 @@
+create database sistemaDeDespesas;
+use sistemaDeDespesas;
+
+create table usuario(
+id int auto_increment,
+alimentacao decimal(8,2) not null,
+combustivel decimal(8,2) not null,
+aluguel decimal(8,2) not null,
+lazer decimal(8,2) not null,
+outros decimal(8,2) not null,
+dataMes date not null,
+primary key(id)
+);
+
+insert into usuario(alimentacao,combustivel,aluguel,lazer,outros,dataMes)values("850","150","1300","250","30",'2023-02-02');
